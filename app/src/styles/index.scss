@@ -1,0 +1,34 @@
+@import "form";
+@import "loginForm";
+@import "home";
+@import "sidebar";
+@import "reviewBalancesheet";
+@import "spinner";
+
+body {
+    font-family: sans-serif;
+  }
+
+button {
+  padding: 13px;
+  min-width: 110px;
+  margin-top: 40px;
+  color: white;
+  background-color: darkcyan;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.clickable {
+  color: darkcyan;
+  cursor: pointer;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  margin-top: 40px;
+  font-weight: bold;
+}

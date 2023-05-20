@@ -1,0 +1,26 @@
+.balance-sheet-container {
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  th, td {
+    text-align: center;
+  }
+  thead tr th {
+    background-color: darkcyan;
+    color: white;
+  }
+
+  .even-row {
+    background-color: white;
+  }
+    
+  .odd-row {
+    background-color: #f9f9f9;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

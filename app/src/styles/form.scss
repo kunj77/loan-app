@@ -1,0 +1,59 @@
+.form-container,
+.loan-form-container {
+  border: 5px solid darkcyan;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  select {
+    border: none;
+    background: beige;
+    padding: 10px;
+    width: 41.5vw;
+    min-width: 300px;
+    margin: 5px;
+  }
+
+  input {
+    border: none;
+    background: beige;
+    padding: 10px;
+    width: 40vw;
+    min-width: 300px;
+    margin: 5px;
+
+    &[type='checkbox'] {
+      width: fit-content;
+      margin-top: 20px;
+    }
+  }
+
+  .title {
+    color: darkcyan;
+    text-align: center;
+  }
+
+  form {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.loan-form-container {
+    border: none;
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+    }
+}
+
+.error-msg {
+    font-size: 12px;
+    color: red;
+    text-align: left;
+    margin-left: 10px;
+  }

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    mem_limit: 5g
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - '4000:4000'
+    depends_on:
+      - database
+    mem_limit: 10g
+  database:
+    image: mongo
+    ports:
+      - '27017:27017'
