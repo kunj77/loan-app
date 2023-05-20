@@ -17,7 +17,7 @@ services:
       - '4000:4000'
     depends_on:
       - database
-    mem_limit: 10g
+    mem_limit: 30g
   database:
     image: mongo
     ports:

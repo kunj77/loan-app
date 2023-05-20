@@ -103,7 +103,7 @@ router.post('/:userId/loans/:loanId?', async (req: Request, res: Response) => {
     }
 
     // Call the decision-engine API
-    const decisionEngineResponse = await axios.post('http://backend:4000/decisionEngine/getDecision', {
+    const decisionEngineResponse = await axios.post('http://localhost:4000/decisionEngine/getDecision', {
       companyName,
       yearEstablished,
       profitOrLossSum,
